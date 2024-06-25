@@ -122,17 +122,23 @@ public class LibrarySystem {
             scanner.nextLine(); // Consume newline
 
             switch (choice) {
-                case 1 -> addBook();
-                case 2 -> removeBook();
-                case 3 -> updateBook();
-                case 4 -> checkoutBook();
-                case 5 -> returnBook();
-                case 6 -> displayBooks();
-                case 7 -> {
+                case 1 : addBook();
+                        break;
+                case 2 : removeBook();
+                break;
+                case 3 : updateBook();
+                break;
+                case 4 : checkoutBook();
+                break;
+                case 5 : returnBook();
+                break;
+                case 6 : displayBooks();
+                break;
+                case 7 : {
                     System.out.println("Exiting the system.");
                     return;
                 }
-                default -> System.out.println("Invalid choice. Please try again.");
+                default : System.out.println("Invalid choice. Please try again.");
             }
         }
     }
