@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class LibraryManagementSystem {
+public class LibrarySystem {
     private final List<Book> books;
     private final Scanner scanner;
 
-    public LibraryManagementSystem() {
+    public LibrarySystem() {
         this.books = new ArrayList<>();
         this.scanner = new Scanner(System.in);
     }
@@ -138,7 +138,7 @@ public class LibraryManagementSystem {
     }
 
     public static void main(String[] args) {
-        LibraryManagementSystem library = new LibraryManagementSystem();
+        LibrarySystem library = new LibrarySystem();
         library.table();
     }
 }
